@@ -1,0 +1,30 @@
+.vis{
+  width : 100%;
+  height : 500px;
+}
+
+.line{
+  fill : transparent;
+  stroke : black;
+}
+
+
+.options ul{
+  display : flex;
+  flex-flow : row wrap;
+  width : 100%;
+  padding : 0;
+}
+.options li{
+  list-style-type : none;
+  margin : 0;
+  padding : 1em;
+  cursor : pointer;
+  opacity : .2;
+}
+
+
+.options .active{
+  border : 3px solid black;
+  opacity : 1;
+}

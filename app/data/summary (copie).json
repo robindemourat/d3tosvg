@@ -1,0 +1,28 @@
+{
+	"dataSources" : [
+				{
+					"name" : "Base locale",
+					"type" : "csv",
+					"url" : "/data/base.csv"
+				},
+				{
+					"name" : "Base Robin Pascal",
+					"type" : "google spreadsheet",
+					"url" : "https://docs.google.com/spreadsheets/d/1KCyR86ZHIqIUpJh96AxIdFmHkhSrZE1IYlAq3LuHbbg/pubhtml",
+					"tab" : "SOURCE"
+				}
+			],
+	"visualisations" : [
+			{
+				"name" : "Test visualisation - date de diffusion vs thématique de l'adaptation",
+				"vis_type" : "linechart",
+				"data_source" : "Base locale",
+				"data_type" : "time",
+				"timedata" : "date",
+				"timeformat" : "%m/%d/%Y",
+				"objects" : "type",
+				"file_name" : "test_visualisation"
+			}
+
+	]
+}

@@ -1,0 +1,43 @@
+<tabset>
+    <tab
+      ng-repeat="source in directory.dataSources track by $index"
+      heading="{{source.name}}"
+      active="source.active"
+    >
+      <div>
+        <p
+          ng-if="!source.data"
+        >
+          ... chargement des données pour cette source, patienter svp ...
+        </p>
+        <table class="table">
+          <th>
+            <td
+              ng-repeat="key in source.headers"
+              ng-bind="key"
+            ></td>
+          </th>
+
+          <tr
+            ng-repeat="d in source.data"
+          >
+            <td
+              ng-repeat="key in source.headers"
+              ng-bind="d[key]"
+            >
+            </td>
+          </tr>
+        </table>
+      </div>
+    </tab>
+</tabset>
+
+
+<!--<div
+  ng-repeat="source in directory.dataSources track by $index"
+>
+  <h2 ng-bind="source.name"></h2>
+
+
+</div>
+-->

@@ -1,0 +1,53 @@
+<div
+  class="vis-item-wrapper"
+  ng-repeat="visualisation in directory.visualisations track by $index"
+>
+  <h2
+    ng-bind="visualisation.name"
+  ></h2>
+  <h3
+    ng-if="!visualisation.data"
+  >
+    Données en chargement ... patienter svp.
+  </h3>
+  <!--vis container -->
+  <div
+    class="vis-item-container"
+    ng-switch="visualisation.vis_type"
+    ng-if="visualisation.data"
+  >
+    <svg
+      class="vis vis-linechart"
+      ng-switch-when="linechart"
+      id="{{visualisation.file_name}}{{$index}}"
+      vis-data-type="visualisation.data_type"
+      vis-data="visualisation.data"
+    >
+      Linechart here
+    </svg>
+  </div>
+  <!--end vis container -->
+  <div
+    class="download-container"
+    ng-if="visualisation.data"
+  >
+    <button
+      class="btn"
+      svg-download="#{{visualisation.file_name}}{{$index}}"
+      title="{{visualisation.file_name}}"
+    >
+      Télécharger cette visualisation
+    </button>
+  </div>
+
+  <div class="options">
+    <ul>
+      <li
+        ng-repeat="obj in visualisation.data"
+        ng-style="{'background' : obj.color}"
+        ng-class="{'active' : obj.shown}"
+        ng-click="toggleProp(obj, 'shown')"
+      >{{obj.key}}</li>
+    </ul>
+  </div>
+</div>

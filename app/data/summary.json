@@ -1,0 +1,35 @@
+{
+	"dataSources" : [
+				{
+					"name" : "Base locale",
+					"type" : "csv",
+					"url" : "/data/base.csv"
+				}
+			],
+	"visualisations" : [
+			{
+				"name" : "Test visualisation - date de diffusion vs thématique de l'adaptation",
+				"vis_type" : "linechart",
+				"data_source" : "Base locale",
+				"data_type" : "time",
+				"timedata" : "date",
+				"timeformat" : "%m/%d/%Y",
+				"objects" : "type",
+				"file_name" : "testvisualisation",
+				"timespan" : "year"
+			},
+			{
+				"name" : "Test visualisation - date de diffusion vs chaîne de l'adaptation",
+				"vis_type" : "linechart",
+				"data_source" : "Base locale",
+				"data_type" : "time",
+				"timedata" : "date",
+				"timeformat" : "%m/%d/%Y",
+				"objects" : "chaîne",
+				"file_name" : "testvisualisations",
+				"timespan" : "year",
+				"showObjects" : ["TF1", "FR3"]
+			}
+
+	]
+}

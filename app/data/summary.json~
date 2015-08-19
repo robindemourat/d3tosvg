@@ -1,0 +1,10 @@
+{
+	"dataSources" : [
+
+				{
+					"name" : "liste test 1",
+					"type" : "google spreadsheet",
+					"url" : "https://docs.google.com/spreadsheets/d/1Uq_6jVIlwfodY_v-uzzuhGYrpoSS1tgubzNRcvdgJjc/pubhtml"
+				}
+			]
+}
