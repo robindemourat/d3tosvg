@@ -17,7 +17,6 @@ angular
     'ngSanitize',
     'ngTouch',
     'hc.downloader',
-    'times.tabletop',
     'ui.bootstrap',
     'LocalStorageModule'
   ])

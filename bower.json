@@ -13,7 +13,6 @@
     "tabletop": "~1.4.2",
     "d3": "~3.5.6",
     "angular-downloadsvg-directive": "Hypercubed/angular-downloadsvg-directive#~0.0.26",
-    "angular-tabletop": "~0.2.1",
     "angular-bootstrap": "~0.13.3",
     "angular-local-storage": "~0.2.2"
   },
