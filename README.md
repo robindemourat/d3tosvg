@@ -6,9 +6,10 @@ It has been built for allowing a smoother workflow between data experts and desi
 
 Workflow of the tool : 
 
-* Set a list of datasets and visualizations in a 'directory.json' file (in `app/data`). Visualizations are basically defined in terms of layout and parameters mapping.
-* refine vis filters and options visually within app GUI
-* download as svg for further infographics work.
+* The data expert works with her data in a google spreadsheet instance
+* Data expert and designer set together the list of datasets and visualizations they want. Designer writes them in a codified form in a 'directory.json' file (in `app/data`). Visualizations are basically defined in terms of layout and parameters mapping.
+* The designer refines the visualizations filters and options visually within app GUI
+* When satisfied, visualizations can be downloaded as svg for further infographics work.
 
 Courtesy of : see bower.json
 
