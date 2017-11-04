@@ -1,4 +1,4 @@
-[Wip] JSON-based svg static data visualizations generator
+[Beta] JSON-based svg static data visualizations generator
 =============
 
 This is a tiny webtool aiming at connecting google spreadsheets and static data files to svg datavis generators.
